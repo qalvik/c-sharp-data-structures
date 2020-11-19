@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zero\\Desktop\\Ex. C#\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj": {}
+    "C:\\Users\\zero\\Desktop\\c# data structures\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zero\\Desktop\\Ex. C#\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj": {
+    "C:\\Users\\zero\\Desktop\\c# data structures\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zero\\Desktop\\Ex. C#\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj",
+        "projectUniqueName": "C:\\Users\\zero\\Desktop\\c# data structures\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj",
         "projectName": "Arrays and ArrayLists",
-        "projectPath": "C:\\Users\\zero\\Desktop\\Ex. C#\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj",
+        "projectPath": "C:\\Users\\zero\\Desktop\\c# data structures\\2.Arrays and ArrayLists\\Arrays and ArrayLists.csproj",
         "packagesPath": "C:\\Users\\zero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zero\\Desktop\\Ex. C#\\2.Arrays and ArrayLists\\obj\\",
+        "outputPath": "C:\\Users\\zero\\Desktop\\c# data structures\\2.Arrays and ArrayLists\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

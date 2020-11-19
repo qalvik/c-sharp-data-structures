@@ -24,3 +24,16 @@ C:\Users\zero\Desktop\Ex. C#\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arr
 C:\Users\zero\Desktop\Ex. C#\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.dll
 C:\Users\zero\Desktop\Ex. C#\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.pdb
 C:\Users\zero\Desktop\Ex. C#\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.genruntimeconfig.cache
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\bin\Debug\netcoreapp3.1\Arrays and ArrayLists.exe
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\bin\Debug\netcoreapp3.1\Arrays and ArrayLists.deps.json
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\bin\Debug\netcoreapp3.1\Arrays and ArrayLists.runtimeconfig.json
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\bin\Debug\netcoreapp3.1\Arrays and ArrayLists.runtimeconfig.dev.json
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\bin\Debug\netcoreapp3.1\Arrays and ArrayLists.dll
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\bin\Debug\netcoreapp3.1\Arrays and ArrayLists.pdb
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.csprojAssemblyReference.cache
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.AssemblyInfoInputs.cache
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.AssemblyInfo.cs
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.csproj.CoreCompileInputs.cache
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.dll
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.pdb
+C:\Users\zero\Desktop\c# data structures\2.Arrays and ArrayLists\obj\Debug\netcoreapp3.1\Arrays and ArrayLists.genruntimeconfig.cache

@@ -38,10 +38,17 @@ namespace Arrays
             tObj2.StopTime();
 
             ArrayListMimic mimic = new ArrayListMimic();
+
             for (int i = 0; i < 100; i++)
             {
                 mimic.Add(1);
             }
+            
+            ArrayListMimic test = new ArrayListMimic();
+
+            test.AddRange(mimic);
+            int s = test.Capacity();
+            test.Clear();
             
             for (int i = 0; i < grades.GetLength(0); i++)
             {
@@ -278,7 +285,7 @@ namespace Arrays
         } 
     } 
 
-    public class ArrayListMimic
+    public class ArrayListMimic : IEnumerator,IEnumerable
     {
         private Object [] arr;
         private int size = 16;
@@ -290,16 +297,32 @@ namespace Arrays
 
         public void Add(Object item)
         {
-            CheckCount(item);
+            CheckCount();
 
             int index = Array.IndexOf(arr, null);
 
             arr[index] = item;
         }
 
-        public void AddRange()
+        public void AddRange(ArrayListMimic items)
         {
+            foreach (var item in items)
+            {
+                CheckCount();
+                int index = Array.IndexOf(arr, null);
+                arr[index] = item;
+            }
+        }
 
+        public int Capacity()
+        {
+            return size;
+        }
+
+        public void Clear()
+        {
+            size = 16;
+            arr = new Object[size];
         }
 
          //IEnumerator and IEnumerable require these methods.
@@ -324,7 +347,7 @@ namespace Arrays
             get { return arr[position];}
         }
 
-        private void CheckCount(Object item)
+        private void CheckCount()
         {
             if(arr[arr.Length-1] != null)
             {
