@@ -50,6 +50,7 @@ namespace Arrays
             int s = test.Capacity();
             //test.Clear();
             bool cnt = test.Contains(2);
+            int t = test.Count();
             
             for (int i = 0; i < grades.GetLength(0); i++)
             {
@@ -342,9 +343,23 @@ namespace Arrays
             }
 
             return false;
+        } 
+
+        public void CopyTo (ArrayListMimic array, int index)
+        {
+
         }
 
-        
+        public int Count()
+        {
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if(arr[i] != null)
+                    count++;     
+            }    
+            return count;
+        }
 
          //IEnumerator and IEnumerable require these methods.
         public IEnumerator GetEnumerator()
