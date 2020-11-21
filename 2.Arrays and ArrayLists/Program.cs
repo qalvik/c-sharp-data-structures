@@ -48,7 +48,8 @@ namespace Arrays
 
             test.AddRange(mimic);
             int s = test.Capacity();
-            test.Clear();
+            //test.Clear();
+            bool cnt = test.Contains(2);
             
             for (int i = 0; i < grades.GetLength(0); i++)
             {
@@ -290,6 +291,7 @@ namespace Arrays
         private Object [] arr;
         private int size = 16;
         private int position = -1;
+
         public ArrayListMimic()
         {
             arr = new Object[size];
@@ -324,6 +326,25 @@ namespace Arrays
             size = 16;
             arr = new Object[size];
         }
+
+        public bool Contains(Object item)
+        {
+            foreach (Object x in arr)
+            {
+                if(x.Equals(item))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
+
+        
 
          //IEnumerator and IEnumerable require these methods.
         public IEnumerator GetEnumerator()
