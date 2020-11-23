@@ -8,18 +8,19 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            int courseCount = 12;
-            int size = 20;
+            TimingComparison();
+            MultiArray();
+            MimicTest();
+        }
 
+        //Comparing ArrayList vs Array
+        static void TimingComparison()
+        {   
+            int size = 20;
             Timing tObj1 = new Timing();
             Timing tObj2 = new Timing();
-
-            int [] gradesArr = new int[size];
-            int [,] grades = new int[courseCount, size];
             ArrayList gradesArrList = new ArrayList();
-    
-            MultiArrayCourse englishCourse = new MultiArrayCourse();
-            englishCourse.AddGrades(grades, courseCount, size); 
+            int [] gradesArr = new int[size];
 
             tObj1.StartTime();
             ArrayListCourse frenchCourse = new ArrayListCourse();
@@ -37,6 +38,44 @@ namespace Arrays
             deutschCourse.LowestGrade(gradesArr);
             tObj2.StopTime();
 
+            foreach (var item in gradesArrList)
+            {
+                Console.WriteLine("Ocena to:" + item);    
+            }
+      
+            Console.WriteLine("Time of Array List equals: " + tObj1.Result().TotalMilliseconds.ToString());
+            Console.WriteLine("Time of Array equals: " + tObj2.Result().TotalMilliseconds.ToString());
+        }
+
+        //Multidimensionall array with courses and grades
+        static void MultiArray()
+        {
+            int courseCount = 12;
+            int size = 20;
+            
+            int [,] grades = new int[courseCount, size];
+                
+            MultiArrayCourse englishCourse = new MultiArrayCourse();
+            englishCourse.AddGrades(grades, courseCount, size); 
+
+            for (int i = 0; i < grades.GetLength(0); i++)
+            {
+                Console.WriteLine("Przedmiot nr: " + i + "\n");
+
+                for (int j = 0; j < grades.GetLength(1); j++)
+                {
+                    Console.WriteLine("Ocena to:" + grades [i,j]);
+                }
+            }
+
+            Console.WriteLine("Average of grades equals: " + englishCourse.AverageGrade(grades));
+            Console.WriteLine("Highest grade equals: " + englishCourse.HighestGrade(grades));
+            Console.WriteLine("Lowest grade equals: " + englishCourse.LowestGrade(grades));
+        }
+
+        //Testing custom Array class acting like ArrayList
+        static void MimicTest()
+        {
             ArrayListMimic mimic = new ArrayListMimic();
 
             for (int i = 0; i < 100; i++)
@@ -51,30 +90,8 @@ namespace Arrays
             //test.Clear();
             bool cnt = test.Contains(2);
             int t = test.Count();
-            
-            for (int i = 0; i < grades.GetLength(0); i++)
-            {
-                Console.WriteLine("Przedmiot nr: " + i + "\n");
-
-                for (int j = 0; j < grades.GetLength(1); j++)
-                {
-                    Console.WriteLine("Ocena to:" + grades [i,j]);
-                }
-            }
-
-            foreach (var item in gradesArrList)
-            {
-                Console.WriteLine("Ocena to:" + item);    
-            }
-            
-             Console.WriteLine("Average of grades equals: " + englishCourse.AverageGrade(grades));
-             Console.WriteLine("Highest grade equals: " + englishCourse.HighestGrade(grades));
-             Console.WriteLine("Lowest grade equals: " + englishCourse.LowestGrade(grades));
-
-             Console.WriteLine("Time of Array List equals: " + tObj1.Result().TotalMilliseconds.ToString());
-
-             Console.WriteLine("Time of Array equals: " + tObj2.Result().TotalMilliseconds.ToString());
         }
+        
     }
 
     public class MultiArrayCourse
